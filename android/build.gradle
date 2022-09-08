@@ -48,6 +48,8 @@ android {
 
 dependencies {
     api "com.facebook.react:react-native:+"
-    implementation 'com.github.CanHub:Android-Image-Cropper:4.1.0'
+    implementation ('com.github.HotsHom:Android-Image-Cropper:fix-color') {
+        exclude group: 'androidx.appcompat'
+    }
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
